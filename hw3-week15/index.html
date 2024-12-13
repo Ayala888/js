@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACS pikir kaldyru formasy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        .form-container h1 {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .form-container select, 
+        .form-container textarea, 
+        .form-container input[type="range"] {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        .qate {
+            color: red;
+            font-size: 12px;
+        }
+        .satti {
+            color: green;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>ACS-ке анонимді пікір қалдыру формасы</h1>
+        <form id="pikirFormasy">
+            <label for="topTandau">Тобыңыз:</label>
+            <select id="topTandau" required>
+                <option value="">Тобыңызды таңдаңыз:</option>
+                <option value="24/2">24/2</option>
+                <option value="24/4">24/4</option>
+            </select>
+            <label for="pikir">Оқу орталығы қысқаша екі сөзбен:</label>
+            <textarea id="pikir"></textarea>
+            <label for="bagalau">Орталықты 0-10 арасында бағалаңыз:</label>
+            <input type="range" id="bagalau" min="0" max="10" value="0">
+            <p>Baga: <span id="bagaMeni">0</span></p>
+            <button type="submit">Жіберу</button><br><br>
+            <div class="qate" id="qatePikir"></div>
+            <div class="satti" id="formaHabarlama"></div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
