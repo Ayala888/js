@@ -1,0 +1,44 @@
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+
+.card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+}
+
+
+.card h2 {
+    font-size: 20px;
+    color: #333;
+    margin: 15px 0 10px;
+}
+
+
+.card p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+
+.card button {
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
